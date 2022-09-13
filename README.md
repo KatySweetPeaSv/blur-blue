@@ -7,14 +7,6 @@ git checkout Katerina
 
 este comando lo haras una sola vez
 
--------------------------------------------------------------------------------------------------------------------------
-Nelson, en esta rama trabaja tu, solo crea los archivos de modo backend.
-
-el comando para trabajar es
-
-git checkout Nelson
-
-este comando lo haras una sola vez
 ---------------------------------------------------------------------------------------------------------
 
 # Getting Started with Create React App
