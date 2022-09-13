@@ -1,3 +1,13 @@
+
+Katherine, en esta rama trabaja tu, solo modifica los archivos de frontend (que también te apoyaré en eso).
+
+el comando para trabajar es
+
+git checkout Katerina
+
+este comando lo haras una sola vez
+
+-------------------------------------------------------------------------------------------------------------------------
 Nelson, en esta rama trabaja tu, solo crea los archivos de modo backend.
 
 el comando para trabajar es
@@ -6,6 +16,7 @@ git checkout Nelson
 
 este comando lo haras una sola vez
 ---------------------------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
