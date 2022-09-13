@@ -1,13 +1,4 @@
 
-Katherine, en esta rama trabaja tu, solo modifica los archivos de frontend (que también te apoyaré en eso).
-
-el comando para trabajar es
-
-git checkout Katerina
-
-este comando lo haras una sola vez
-
----------------------------------------------------------------------------------------------------------
 
 # Getting Started with Create React App
 
