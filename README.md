@@ -1,4 +1,4 @@
-Katherine, en esta rama trabaja tu, solo modifica los archivos de las unidades que debes hacer.
+Katherine, en esta rama trabaja tu, solo modifica los archivos de frontend (que también te apoyaré en eso).
 
 el comando para trabajar es
 
