@@ -1,4 +1,4 @@
-Este brantch es tuyo. Solo necesitas escribir solo una vez: git checkout Erick
+Este brantch es tuyo. Solo necesitas escribir solo una vez: git checkout Jose
 -------------------------------------------------------------------------------
 
 # Getting Started with Create React App
