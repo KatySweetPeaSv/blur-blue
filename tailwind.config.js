@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -27,6 +28,17 @@ module.exports = {
           // @media ( min - width : 1280px ) { ... }
           '2xl': '1536px'
           // @media ( min - width : 1536px ) { ... }
+      },
+
+      fontFamily: {
+        'luckiest': "'Luckiest Guy', serif",
+        'anton': "'Anton', sans-serif",
+        'bitter': "'Bitter', sans-serif",
+        'lato': "'Lato', sans-serif",
+        'basker': "'Libre Baskerville', serif",
+        'oswald': "'Oswald', sans-serif",
+        'raleway': "'Raleway', sans-serif",
+        'ubuntu': "'Ubuntu', sans-serif",
       }
     },
   },

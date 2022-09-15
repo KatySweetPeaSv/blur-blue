@@ -1,7 +1,8 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Products from './components/Products';
+import CardGrid from './components/CardGrid';
+
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <Navbar />
         <br /><br /><br /><br /><br />
         <Hero />
-        <Products />
+        <CardGrid />
     </>
     
   );

@@ -12,7 +12,18 @@
         hover:bg-PaleBlue hover:text-GrayishBlack font-bold rounded-md transition duration-500
     }
 
-    html {
-        font-family: Proxima Nova, system-ui, sans-serif;
-      }
+    .cardShadow {
+        box-shadow: 12px 14px 0px -7px rgba(0,0,0,0.91);
+        -webkit-box-shadow: 12px 14px 0px -7px rgba(0,0,0,0.91);
+        -moz-box-shadow: 12px 14px 0px -7px rgba(0,0,0,0.91);
+    }
+
+    .cardRatio { 
+        @apply  h-[320px] max-w-full aspect-auto
+    }
+
+    .pCounter {
+        @apply w-[20px] h-[20px] bg-LightBlue rounded-lg inline-block
+    }
+
 }
