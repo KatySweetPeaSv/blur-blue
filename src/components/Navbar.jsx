@@ -18,7 +18,7 @@ const Navbar = () => {
                         <div className='flex items-center'>
                             <div className='mr-4 flex'> 
                             < ShoppingCartIcon className=' w-7 mr-8 text-white' />
-                            <a href="#" className='pCounter ml-[-44px] mb-[38px] text-center text-xs'>1</a>
+                            <a href="#" className='pCounter ml-[-44px] mb-[38px] text-center text-xs'>0</a>
                             </div>
                             
                             <button className='px-4 py-2 mr-4 font-oswald'>Ingresar</button>
