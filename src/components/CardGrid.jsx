@@ -67,31 +67,7 @@ const CardGrid = () => {
                         </div> 
 
                     ))}
-                    {cards.map((card, index) => (
-                        <div className='border-GrayishBlack border-[1px] cardShadow flex flex-col flex-wrap p-3 font-lato' key={index}>
-                          {/* Image */}
-                          <img className='cardRatio' src={card.image} alt={card.name} />
-                              {/* Product Details */}
-                              <div className='border-GrayishBlack border-t-[1px] text-center py-2'>
-                                        <h3 className='uppercase font-bold text-GrayishBlack'>{card.name}</h3>
-                                        <p className=' capitalize text-xs text-gray-600'>{card.category}</p>
-                                        <p className=' text-black text-2xl py-2 font-bold'>{card.price}</p>
 
-                                        {/* Checkout Options */}
-                                        <p className='text-2'>Cantidad</p>
-                                        <div className='counter flex justify-center pt-2'>
-                                        <button className='px-2 py-1 font-bold'>-</button>
-                                        <input className='w-12 border-LightBlue rounded-md mx-1 text-sm text-center
-                                        placeholder-gray-600 focus:outline-LightBlue focus:border-LightBlue focus:ring-1 
-                                        focus:ring-LightBlue ' type="text" placeholder='0' />
-                                        <button className='px-2 py-1 font-bold'>+</button>
-                                    </div>
-                                        <button className='px-4 py-2 mt-3'>Agregar al Carrito</button>
-                                        <button className='px-12 py-2 mt-3 bg-green-500 hover:bg-green-300'>Comprar</button>
-                              </div>
-                        </div> 
-
-                    ))}
                   </div>
 
                 </div>
