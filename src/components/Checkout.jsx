@@ -22,7 +22,7 @@ const Checkout = () => {
                           <p className='text-gray-600'>1</p>
                         </div>
                         <div className='flex justify-center'>
-                      <TrashIcon className='w-5 hover:text-Reddish cursor-pointer'/>
+                      <TrashIcon className='w-5 hover:text-Reddish cursor-pointer transition duration-300' title='Eliminar' />
                       </div>
             </div>
             <div className='grid grid-cols-1 gap-1'>
@@ -31,7 +31,7 @@ const Checkout = () => {
               <button className='mx-[55px]  bg-green-500 hover:bg-green-300 capitalize'>Comprar Ya</button>
             </div>
             <div>
-              <a href='' className='text-xs capitalize'>Ver todos</a>
+              <a href='#' className='text-xs capitalize'>Ver todos</a>
             </div>
         </div>
     </div>

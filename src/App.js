@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import CardGrid from './components/CardGrid';
 import Checkout from './components/Checkout';
 
-
 function App() {
   return (
    <>

@@ -20,7 +20,7 @@ const Navbar = () => {
                         </div>
                         <div className='flex items-center'>
                             <div className='mr-4 flex'> 
-                            < ShoppingCartIcon className=' w-7 mr-8 text-white' />
+                            < ShoppingCartIcon className=' w-7 mr-8 text-white cursor-pointer' title='Carrito'  />
                             <a href="#" className='pCounter ml-[-44px] mb-[38px] text-center text-xs'>0</a>
                             </div>
                             
