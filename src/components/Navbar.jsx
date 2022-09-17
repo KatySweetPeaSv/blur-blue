@@ -2,6 +2,9 @@ import React from 'react'
 import {ShoppingCartIcon} from '@heroicons/react/24/solid';
 
 const Navbar = () => {
+
+  
+
   return (
     <div className='w-screen z-10 bg-GrayishBlack fixed drop-shadow-lg'>
         <div className='flex justify-between items-center w-full h-full px-2  text-white'>

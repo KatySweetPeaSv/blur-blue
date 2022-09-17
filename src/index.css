@@ -26,4 +26,8 @@
         @apply w-[20px] h-[20px] bg-LightBlue rounded-lg inline-block
     }
 
+    .checkoutImg {
+        @apply h-[80px] max-w-full aspect-auto
+    }
+
 }

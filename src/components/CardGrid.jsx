@@ -25,7 +25,7 @@ const CardGrid = () => {
 
                   {/* Filter Price */}
                   <div>
-                      <p className='font-bold text-DeepGray'>Filtrar por precio ($):</p>
+                      <p className='font-bold text-DeepGray'>Filtrar por precio (US$):</p>
                       <div className='flex justify-between flex-wrap mt-2'>
                         <button className='border-Reddish text-Reddish bg-white font-thin hover:bg-Reddish hover:text-white m-2 px-4'>1 - 100</button>
                         <button className='border-Reddish text-Reddish bg-white font-thin hover:bg-Reddish hover:text-white m-2 px-4'>100 - 200</button>
@@ -39,11 +39,12 @@ const CardGrid = () => {
                   {/*Display cards [8]*/}
                   <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 pt-4'>
                     {cards.map((card, index) => (
-                        <div className='border-GrayishBlack border-[1px] cardShadow flex flex-col flex-wrap p-3 font-lato' key={index}>
+                        <div className='border-GrayishBlack border-[1px] cardShadow flex flex-col 
+                        flex-wrap p-3 font-lato transition duration-300 hover:border-[2px] hover:shadow-none' key={index}>
                           {/* Image */}
                           <img className='cardRatio' src={card.image} alt={card.name} />
                               {/* Product Details */}
-                              <div className='border-GrayishBlack border-t-[1px] text-center py-2'>
+                              <div className='border-GrayishBlack border-t-[1px] hover:border-t-[2px]  text-center py-2'>
                                         <h3 className='uppercase font-bold text-GrayishBlack'>{card.name}</h3>
                                         <p className=' capitalize text-xs text-gray-600'>{card.category}</p>
                                         <p className=' text-black text-2xl py-2 font-bold'>{card.price}</p>
