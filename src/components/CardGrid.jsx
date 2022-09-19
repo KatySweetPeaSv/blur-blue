@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { data } from "../data/data.js";
+import { Link } from "react-router-dom";
 import useFigures from "../hooks/useFigure.js";
 
 const CardGrid = () => {
   const [cards, Setcard] = useState(data);
   const { figures, loading } = useFigures();
+  console.log(figures);
 
   return (
     <div className="max-w-[1240px] m-auto px-4 mt-[7rem] bg-img">
@@ -76,18 +78,23 @@ const CardGrid = () => {
                   key={figure.id}
                 >
                   {/* Image */}
-                  <a href="#">
-                    <img
-                      className="cardRatio"
-                      src={figure.image}
-                      alt={figure.name}
-                    />
-                  </a>
+                  <div>
+                    <Link to={`/figure/${figure.id}`}>
+                      <img
+                        className="cardRatio"
+                        src={figure.image}
+                        alt={figure.name}
+                      />
+                    </Link>
+                  </div>
                   {/* Product Details */}
                   <div className="border-GrayishBlack border-t-[1px] text-center py-2">
-                    <h3 className="uppercase font-bold text-GrayishBlack">
-                      {figure.name}
-                    </h3>
+                    <Link to={`/figure/${figure.id}`}>
+                      <h3 className="uppercase font-bold text-GrayishBlack">
+                        {figure.name}
+                      </h3>
+                    </Link>
+
                     <p className=" capitalize text-sm text-gray-800">
                       {figure.franchise}
                     </p>
