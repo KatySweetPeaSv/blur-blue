@@ -5,7 +5,11 @@ const CardGrid = () => {
   const [cards, Setcard] = useState(data);
 
   return (
-      <div className='max-w-[1240px] m-auto px-4 bg-Beige mt-[-5rem]'>
+    
+      <div className='max-w-[1240px] m-auto px-4 mt-[7rem] bg-img'>
+      <div className='flex flex-row-reverse mb-[-18rem] mr-[-6rem]'>
+      <iframe src="https://giphy.com/embed/JnlCMXgPUawQUb5HVf" width="160" height="160" />
+      </div>
         <h1 className='text-4xl font-anton text-center py-10 '>Figuras más vendidas</h1>
 
         {/* Filter Row */}
@@ -36,23 +40,26 @@ const CardGrid = () => {
         </div>
         {/* ==============================*/}
                 <div>
+                  
                   {/*Display cards [8]*/}
                   <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 pt-4'>
+                  
                     {cards.map((card, index) => (
                         <div className='border-GrayishBlack border-[1px] cardShadow flex flex-col 
                         flex-wrap p-3 font-lato transition duration-300 hover:border-[2px] hover:shadow-none' key={index}>
                           {/* Image */}
+                          <a href="#">
                           <img className='cardRatio' src={card.image} alt={card.name} />
+                          </a>
                               {/* Product Details */}
                               <div className='border-GrayishBlack border-t-[1px] text-center py-2'>
                                         <h3 className='uppercase font-bold text-GrayishBlack'>{card.name}</h3>
-                                        <p className=' capitalize text-xs text-gray-600'>{card.category}</p>
+                                        <p className=' capitalize text-xs text-gray-600'>{card.franchise}</p>
                                         <p className=' text-black text-2xl py-2 font-bold'>{card.price}</p>
 
                                         {/* Checkout Options */}
-                                        
                                         <p className='text-2'>Cantidad</p>
-                                        <div className='counter flex justify-center pt-2'>
+                                    <div className='counter flex justify-center pt-2'>
                                         <button className='px-2 py-1 font-bold'>-</button>
                                         <input className='w-12 border-LightBlue rounded-md mx-1 text-sm text-center
                                         placeholder-gray-600 focus:outline-LightBlue
@@ -67,7 +74,10 @@ const CardGrid = () => {
                         </div> 
 
                     ))}
-
+                          <div className='flex ml-[-7rem] mt-[-3rem]'>
+                          <iframe src="https://giphy.com/embed/kwO0W496Bz21dfCvgk" 
+                          width="160" height="160" frameBorder="0"></iframe>
+                          </div>
                   </div>
 
                 </div>

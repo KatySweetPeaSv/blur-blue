@@ -30,4 +30,8 @@
         @apply h-[80px] max-w-full aspect-auto
     }
 
+    .ProductDetailsImg { 
+        @apply  h-[740px] max-w-full aspect-auto
+    }
+
 }
