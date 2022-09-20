@@ -1,4 +1,6 @@
 import React from "react";
+import CardGrid from "./CardGrid";
+import { Link } from "react-router-dom";
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
 
 const Navbar = () => {
@@ -6,9 +8,12 @@ const Navbar = () => {
     <div className="w-screen z-10 bg-GrayishBlack fixed overflow-hidden top-0 drop-shadow-lg mb-5 p-2">
       <div className="flex justify-between items-center w-full h-full px-2  text-white">
         <div className="flex items-center ">
-          <h1 className="text-2xl font-bold mr-[10rem] sm:text-3xl cursor-pointer font-oswald">
-            Mizu No KoKyú
-          </h1>
+          <Link to="/">
+            <h1 className="text-2xl font-bold mr-[10rem] sm:text-3xl cursor-pointer font-oswald">
+              Mizu No KoKyú
+            </h1>
+          </Link>
+
           <ul className="flex">
             <li className="font-oswald">Figuras</li>
             <li className="font-oswald">Franquicias</li>

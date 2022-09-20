@@ -15,9 +15,9 @@ function App() {
         <Route path="/" exact>
           <CardGrid />
         </Route>
-
-        <Route exact path="/figure/:id" component={ProductPage} />
-
+        <Route exact path="/figure/:id">
+          <ProductPage />
+        </Route>
         <Route path="/checkout" component={Checkout} />
       </Switch>
     </>

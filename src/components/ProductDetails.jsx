@@ -6,10 +6,10 @@ function ProductDetails({ figure }) {
   console.log(data);
 
   return (
-    <div className="max-w-[1240px] m-auto px-4 mt-[-5rem] pt-5 font-lato">
+    <div className="max-w-[1240px] m-auto px-4 mt-[-5rem] pt-5 font-lato mt-5">
       <div className="grid grid-cols-2 text-center items-start ">
         <div className="flex justify-center flex-col gap-5" key={data?.id}>
-          <div className="border-[1px] border-GrayishBlack flex justify-center shadow-lg">
+          <div className=" flex justify-center drop-shadow-2xl rounded">
             <img className="ProductDetailsImg" src={data?.image} alt="imagen" />
           </div>
           <h3>Envio</h3>
