@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { data } from "../data/data.js";
 import { Link } from "react-router-dom";
-import useFigures from "../hooks/useFigure.js";
+import useFigures from "../../hooks/useFigure";
 // Import all redux logic
-import { insertToCart } from "../redux/actions";
+import { insertToCart } from "../../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 
 const CardGrid = () => {
-  const [cards, Setcard] = useState(data);
   const { figures, loading } = useFigures();
   console.log(figures);
 

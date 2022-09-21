@@ -1,9 +1,11 @@
 import React from "react";
-import CardGrid from "./CardGrid";
+import CardGrid from "./card-grid/CardGrid";
 import { Link } from "react-router-dom";
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const cart = useSelector((state) => state.cart);
   return (
     <div className="w-screen z-10 bg-GrayishBlack fixed overflow-hidden top-0 drop-shadow-lg mb-5 p-2">
       <div className="flex justify-between items-center w-full h-full px-2  text-white">
@@ -28,12 +30,11 @@ const Navbar = () => {
               className=" w-7 mr-8 text-white cursor-pointer"
               title="Carrito"
             />
-            <a
-              href="#"
-              className="pCounter ml-[-44px] mb-[38px] text-center text-xs"
-            >
-              0
-            </a>
+            <Link to="/checkout">
+              <span className="pCounter ml-[-44px] mb-[38px] text-center text-xs">
+                {cart.length}
+              </span>
+            </Link>
           </div>
 
           <button className="px-4 py-2 mr-4 font-oswald">Ingresar</button>
