@@ -2,11 +2,17 @@ import React, { useState } from "react";
 import { data } from "../data/data.js";
 import { Link } from "react-router-dom";
 import useFigures from "../hooks/useFigure.js";
+// Import all redux logic
+import { insertToCart } from "../redux/actions";
+import { useDispatch, useSelector } from "react-redux";
 
 const CardGrid = () => {
   const [cards, Setcard] = useState(data);
   const { figures, loading } = useFigures();
   console.log(figures);
+
+  // Redux logic
+  const dispatch = useDispatch();
 
   return (
     <div className="max-w-[1240px] m-auto px-4 mt-[7rem] bg-img">
@@ -120,7 +126,10 @@ const CardGrid = () => {
                       />
                       <button className="px-2 py-1 font-bold">+</button>
                     </div>
-                    <button className="px-4 py-2 mt-3">
+                    <button
+                      className="px-4 py-2 mt-3"
+                      onClick={(e) => dispatch(insertToCart(figure))}
+                    >
                       Agregar al Carrito
                     </button>
                     <button className="px-12 py-2 mt-3 bg-green-500 hover:bg-green-300">

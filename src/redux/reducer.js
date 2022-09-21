@@ -1,18 +1,19 @@
-import { insertToCart, deleteFromCart } from "./actions";
+import { INSERT_FIGURE, DELETE_FIGURE } from "./actions";
 
-export const defaultState = {
-  data: {},
+const defaultState = {
+  cart: [],
+  figure: {},
   loading: false,
   error: false,
 };
 
 const reducer = (state = defaultState, action) => {
   switch (action.type) {
-    case insertToCart:
+    case "INSERT_FIGURE":
       const incomingFigure = action.payload;
-      const incomingId = incomingFigure.id;
+      const incomingFigureId = incomingFigure.id;
       const existingFigure = state.cart.find((figure) => {
-        if (incomingFigure === figure.id) {
+        if (incomingFigureId === figure.id) {
           return true;
         }
         return false;
@@ -26,7 +27,7 @@ const reducer = (state = defaultState, action) => {
         };
       }
 
-    case deleteFromCart:
+    case "DELETE_FIGURE":
       const getFigure = action.payload;
       return {
         ...state,

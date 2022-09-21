@@ -10,9 +10,11 @@ const reduxStore = storeFactory();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <Provider store={reduxStore}>
-      <App />
-    </Provider>
-  </BrowserRouter>
+  <Provider store={reduxStore}>
+    <BrowserRouter>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </BrowserRouter>
+  </Provider>
 );
