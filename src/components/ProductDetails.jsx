@@ -6,22 +6,19 @@ function ProductDetails({ figure }) {
   console.log(data);
 
   return (
-    <div className="max-w-[1240px] m-auto px-4 mt-[-5rem] pt-5 font-lato mt-5">
+    <div className="max-w-[1240px] m-auto px-4 my-[5rem] pt-5 font-lato">
       <div className="grid grid-cols-2 text-center items-start ">
         <div className="flex justify-center flex-col gap-5" key={data?.id}>
           <div className=" flex justify-center drop-shadow-2xl rounded">
             <img className="ProductDetailsImg" src={data?.image} alt="imagen" />
           </div>
-          <h3>Envio</h3>
-          <h3>Entregas</h3>
-          <h3>Devoluciones</h3>
         </div>
 
         <div className="flex flex-col ml-[2rem]  bg-[#fcf8f5] rounded-sm">
           <div className="flex flex-col gap-5">
             <h1 className="text-3xl capitalize mt-4">figura de {data?.name}</h1>
             <h2 className="text-4xl uppercase text-LightBlue mb-[2rem]">
-              {data?.price}
+              ${data?.price}
             </h2>
           </div>
 

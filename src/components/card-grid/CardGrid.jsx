@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import useFigures from "../../hooks/useFigure";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import useFigures from '../../hooks/useFigure';
 // Import all redux logic
-import { insertToCart } from "../../redux/actions";
-import { useDispatch, useSelector } from "react-redux";
+import { insertToCart } from '../../redux/actions';
+import { useDispatch, useSelector } from 'react-redux';
 
 const CardGrid = () => {
   const { figures, loading } = useFigures();
@@ -106,7 +106,7 @@ const CardGrid = () => {
                       {figure.brand}
                     </p>
                     <p className=" text-black text-2xl py-2 font-bold">
-                      {figure.price}
+                      ${figure.price}
                     </p>
 
                     {/* Checkout Options */}

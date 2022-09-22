@@ -3,17 +3,16 @@ import CardGrid from './card-grid/CardGrid';
 import { Link } from 'react-router-dom';
 import { ShoppingCartIcon } from '@heroicons/react/24/solid';
 import { useSelector } from 'react-redux';
+import Logo from '../assets/logo.png';
 
 const Navbar = () => {
   const cart = useSelector((state) => state.cart);
   return (
     <div className="w-screen z-10 bg-GrayishBlack fixed overflow-hidden top-0 drop-shadow-lg mb-5 p-2">
       <div className="flex justify-between items-center w-full h-full px-2  text-white">
-        <div className="flex items-center ">
+        <div className="flex items-center justify-evenly">
           <Link to="/">
-            <h1 className="text-2xl font-bold mr-[10rem] sm:text-3xl cursor-pointer font-oswald">
-              Mizu No KoKyú
-            </h1>
+            <img className="w-[10rem] mr-[8rem]" src={Logo} alt="logo" />
           </Link>
 
           <ul className="flex">
