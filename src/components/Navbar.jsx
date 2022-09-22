@@ -1,5 +1,6 @@
 import React from 'react'
 import {ShoppingCartIcon} from '@heroicons/react/24/solid';
+import Logo from '../assets/logo.png';
 
 const Navbar = () => {
 
@@ -8,8 +9,10 @@ const Navbar = () => {
   return (
     <div className='w-screen z-10 bg-GrayishBlack fixed drop-shadow-lg'>
         <div className='flex justify-between items-center w-full h-full px-2  text-white'>
+                            <div className='py-5'>
+                              <img className='w-[9rem] cursor-pointer' src={Logo} alt="company logo" />
+                            </div>
                         <div className='flex items-center '>
-                            <h1 className='text-2xl font-bold mr-[10rem] sm:text-3xl cursor-pointer font-oswald'>Mizu No KoKyú</h1>
                                     <ul className='flex'>
                                         <li className='font-oswald'>Figuras</li>
                                         <li className='font-oswald'>Franquicias</li>
