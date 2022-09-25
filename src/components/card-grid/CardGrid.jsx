@@ -13,7 +13,7 @@ const CardGrid = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="max-w-[1240px] m-auto px-4 mt-[7rem] bg-img">
+    <div className="max-w-[1240px] m-auto px-4 mt-[15rem] bg-img">
       <div className="flex flex-row-reverse mb-[-18rem] mr-[-6rem]">
         <iframe
           src="https://giphy.com/embed/JnlCMXgPUawQUb5HVf"
