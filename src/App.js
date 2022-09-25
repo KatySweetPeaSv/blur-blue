@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import CardGrid from './components/card-grid/CardGrid';
 import ProductPage from './pages/ProductPage';
 import CheckoutFullPage from './components/CheckoutFullPage';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         </Route>
         <Route path="/checkout" component={CheckoutFullPage} />
       </Switch>
+      <Footer/>
     </>
   );
 }
