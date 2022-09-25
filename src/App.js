@@ -1,10 +1,10 @@
-import './App.css';
-import { Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import CardGrid from './components/card-grid/CardGrid';
-import ProductPage from './pages/ProductPage';
-import CheckoutFullPage from './components/CheckoutFullPage';
+import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import CardGrid from "./components/card-grid/CardGrid";
+import ProductPage from "./pages/ProductPage";
+import CheckoutFullPage from "./pages/CheckoutFullPage";
 
 function App() {
   return (
