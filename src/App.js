@@ -4,7 +4,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CardGrid from './components/card-grid/CardGrid';
 import ProductPage from './pages/ProductPage';
-import CheckoutFullPage from './components/CheckoutFullPage';
+import CheckoutFullPage from './pages/CheckoutFullPage';
+import NewProductForm from './components/NewProductForm';
 import Footer from './components/Footer';
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
           <ProductPage />
         </Route>
         <Route path="/checkout" component={CheckoutFullPage} />
+        <Route path="/register" component={NewProductForm} />
       </Switch>
-      <Footer/>
+      <Footer />
     </>
   );
 }

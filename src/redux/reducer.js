@@ -31,7 +31,7 @@ const reducer = (state = defaultState, action) => {
       const getFigure = action.payload;
       return {
         ...state,
-        cart: [...state.cart.filter((figure) => getFigure !== getFigure.id)],
+        cart: [...state.cart.filter((figure) => getFigure !== figure.id)],
       };
     default:
       return state;
