@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import CardGrid from "./components/card-grid/CardGrid";
 import ProductPage from "./pages/ProductPage";
 import CheckoutFullPage from "./pages/CheckoutFullPage";
+import NewProductForm from "./components/NewProductForm";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <ProductPage />
         </Route>
         <Route path="/checkout" component={CheckoutFullPage} />
+        <Route path="/register" component={NewProductForm} />
       </Switch>
     </>
   );

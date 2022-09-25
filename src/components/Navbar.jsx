@@ -1,9 +1,9 @@
-import React from 'react';
-import CardGrid from './card-grid/CardGrid';
-import { Link } from 'react-router-dom';
-import { ShoppingCartIcon } from '@heroicons/react/24/solid';
-import { useSelector } from 'react-redux';
-import Logo from '../assets/logo.png';
+import React from "react";
+import CardGrid from "./card-grid/CardGrid";
+import { Link } from "react-router-dom";
+import { ShoppingCartIcon } from "@heroicons/react/24/solid";
+import { useSelector } from "react-redux";
+import Logo from "../assets/logo.png";
 
 const Navbar = () => {
   const cart = useSelector((state) => state.cart);
@@ -35,9 +35,9 @@ const Navbar = () => {
               </span>
             </Link>
           </div>
-
-          <button className="px-4 py-2 mr-4 font-oswald">Ingresar</button>
-          <button className="px-4 py-2 mr-4 font-oswald">Registrarme</button>
+          <Link to="/register">
+            <button className="px-4 py-2 mr-4 font-oswald">Ingresar</button>
+          </Link>
         </div>
       </div>
     </div>
