@@ -3,35 +3,34 @@
 @tailwind utilities;
 
 @layer base {
-    li {
-        @apply p-4 hover:text-Reddish cursor-pointer transition duration-500
-    }
+  li {
+    @apply p-4 hover:text-Reddish cursor-pointer transition duration-500;
+  }
 
-    button {
-        @apply text-white border  bg-LightBlue border-white
-        hover:bg-PaleBlue hover:text-GrayishBlack font-bold rounded-md transition duration-500
-    }
+  button {
+    @apply text-white border  bg-LightBlue border-white
+        hover:bg-PaleBlue hover:text-GrayishBlack font-bold rounded-md transition duration-500;
+  }
 
-    .cardShadow {
-        box-shadow: 12px 14px 0px -7px rgba(0,0,0,0.91);
-        -webkit-box-shadow: 12px 14px 0px -7px rgba(0,0,0,0.91);
-        -moz-box-shadow: 12px 14px 0px -7px rgba(0,0,0,0.91);
-    }
+  .cardShadow {
+    box-shadow: 0 3px 13px rgb(0 0 0 / 0.3);
+    -webkit-box-shadow: 0 3px 13px rgb(0 0 0 / 0.3);
+    -moz-box-shadow: 0 3px 13px rgb(0 0 0 / 0.3);
+  }
 
-    .cardRatio { 
-        @apply  h-[320px] max-w-full aspect-auto
-    }
+  .cardRatio {
+    @apply h-[320px] max-w-full aspect-auto;
+  }
 
-    .pCounter {
-        @apply w-[20px] h-[20px] bg-LightBlue rounded-lg inline-block
-    }
+  .pCounter {
+    @apply w-[20px] h-[20px] bg-LightBlue rounded-lg inline-block;
+  }
 
-    .checkoutImg {
-        @apply h-[80px] max-w-full aspect-auto
-    }
+  .checkoutImg {
+    @apply h-[80px] max-w-full aspect-auto;
+  }
 
-    .ProductDetailsImg { 
-        @apply  h-[740px] max-w-full aspect-auto
-    }
-
+  .ProductDetailsImg {
+    @apply h-[740px] max-w-full aspect-auto;
+  }
 }

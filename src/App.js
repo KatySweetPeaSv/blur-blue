@@ -1,26 +1,30 @@
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import CardGrid from './components/CardGrid';
-import Checkout from './components/Checkout';
-import ProductDetails from './components/ProductDetails';
+import CardGrid from './components/card-grid/CardGrid';
+import ProductPage from './pages/ProductPage';
+import CheckoutFullPage from './pages/CheckoutFullPage';
+import NewProductForm from './components/NewProductForm';
 import Footer from './components/Footer';
-import Social from './components/Social';
 
 function App() {
   return (
-   <>
-        <Navbar />
-        <br /><br /><br /><br /><br />
-        <Hero />
-        <CardGrid />
-        <Checkout />
-        <br /><br /><br /><br /><br />
-        <ProductDetails/>
-			  <br></br>
-				<Footer/>
+    <>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact>
+          <Hero />
+          <CardGrid />
+        </Route>
+        <Route exact path="/figure/:id">
+          <ProductPage />
+        </Route>
+        <Route path="/checkout" component={CheckoutFullPage} />
+        <Route path="/register" component={NewProductForm} />
+      </Switch>
+      <Footer />
     </>
-    
   );
 }
 
