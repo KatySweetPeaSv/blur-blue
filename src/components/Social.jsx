@@ -1,4 +1,6 @@
 import React from 'react'
+import {Logos} from './Things';
+
 
 export const Social = ({Logos}) => {
   return (

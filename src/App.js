@@ -5,6 +5,7 @@ import CardGrid from './components/CardGrid';
 import Checkout from './components/Checkout';
 import ProductDetails from './components/ProductDetails';
 import Footer from './components/Footer';
+import Social from './components/Social';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Checkout />
         <br /><br /><br /><br /><br />
         <ProductDetails/>
+			  <br></br>
 				<Footer/>
     </>
     

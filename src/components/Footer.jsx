@@ -1,7 +1,6 @@
 import React from 'react';
 import ItContain from './ItContain';
 import Social from './Social';
-import {Logos} from './Things';
 
 const Footer =() =>{
 	return <footer className="bg-[#1e40af] text-white">
@@ -14,7 +13,7 @@ const Footer =() =>{
 		<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-center text-cyan-700 text-sm pb-8'>
 			<span>Ⓒ 2022 Mitzu No KoKyú by Kodigo. Todos los Derechos Reservados.</span>
 			<span>Términos - Políticas</span>
-			<Social Links={Logos}/>
+			<Social/>
 		</div>
 		
 	</footer>
