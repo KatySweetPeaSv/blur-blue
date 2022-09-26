@@ -24,20 +24,12 @@ const NewProductForm = () => {
   });
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("values", values);
-    axios
-      .post("https://desolate-bayou-57725.herokuapp.com/api/products", values)
-      .then((response) => {
-        console.log("AXIOS POST RESPONSE", response);
-        toast.success(
-          `"${response.data.name}" has been added to the database.`
-        );
-      })
-      .catch((error) => {
-        console.log("AXIOS POST ERROR", error);
-        toast.error(error.response.data);
-      });
+   e.preventDefault();
+   const hasEmptyFields = Object.values(values).some((item) => item === "");
+    if (hasEmptyFields) {
+      toast.error("Todos los campos son obligatorios");
+    }
+    const res = axios.post("http://localhost:3001/figures", values);
   };
 
   const handleInputChange = (e) => {
