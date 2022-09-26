@@ -24,12 +24,17 @@ const NewProductForm = () => {
   });
 
   const handleSubmit = (e) => {
-   e.preventDefault();
-   const hasEmptyFields = Object.values(values).some((item) => item === "");
-    if (hasEmptyFields) {
-      toast.error("Todos los campos son obligatorios");
-    }
-    const res = axios.post("http://localhost:3001/figures", values);
+    e.preventDefault();
+    axios
+      .post("https://desolate-bayou-57725.herokuapp.com/api/products", values)
+      .then((response) => {
+        console.log(response);
+        toast.success("Producto agregado con éxito");
+      })
+      .catch((error) => {
+        console.log(error.response);
+        toast.error(error.response.data);
+      });
   };
 
   const handleInputChange = (e) => {
@@ -173,7 +178,12 @@ const NewProductForm = () => {
             />
           </div>
 
-          <button type="submit">Agregar</button>
+          <button
+            type="submit"
+            className="bg-GrayishBlack text-white py-2 px-4 rounded mt-3 hover:bg-blue-600"
+          >
+            Agregar
+          </button>
         </form>
       </div>
     </section>
